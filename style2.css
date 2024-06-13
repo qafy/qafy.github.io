@@ -1,0 +1,149 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+
+table {
+    text-align: left;
+}
+
+body {
+    width: 60%;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+img {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 3px 3px .4em darkgray, -3px 0 .4em darkgray;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+
+a {
+    color: rgb(85, 85, 177);
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: rgb(72, 72, 146)
+}
+
+border {
+    padding: 100px 100px 100px 100px;
+    margin: 1000px 1000px 1000px 1000px;
+    align-content: center;
+}
+
+.menupoint {
+    color: black;
+    transition-timing-function: ease;
+    transition: transform 0.5s;
+
+}
+
+.menupoint:hover {
+    transform: translateX(50px);
+}
+
+#title1 {
+
+    color: black;
+}
+
+#title2 {
+
+    color: black;
+}
+
+h4 {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.evencol>* {
+    flex-basis: 100%;
+}
+
+#loadingMask {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+}
+
+@media (pointer:coarse) {
+    .menupoint:hover {
+        transform: translateX(0px);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(0, 0, 0);
+        color: #eee;
+    }
+
+    a {
+        color: rgb(164, 164, 245);
+    }
+
+    a:visited {
+        color: rgb(212, 207, 246)
+    }
+
+    .title {
+        font-style: italic;
+        color: white;
+    }
+
+    #title1 {
+
+        color: white;
+    }
+
+    #title2 {
+
+        color: white;
+    }
+
+    #loadingMask {
+
+        background: black;
+    }
+}
